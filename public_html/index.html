@@ -16,11 +16,12 @@
     <link rel="stylesheet" href="style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <script src="scripts/smoothscroll.js"></script>
-    <script src="scripts/scrolltrigger.js"></script>
-    <script src="scripts/toggleNavbar.js"></script>
+    <script src="scripts/smooth-scroll.js"></script>
+    <script src="scripts/scroll-trigger.js"></script>
+    <script src="scripts/toggle-navbar.js"></script>
+    <script src="scripts/dynamic-circles.js"></script>
   </head>
-  <body>
+  <body style="background: teal">
     <div class="navbar">
       <div class="navbar-toggle center" onclick="toggleNavbar()">ᐳ</div>
       <div class="navbar-banner center">
@@ -45,5 +46,112 @@
         </div>
       </div>
     </div>
+
+    <section class="homepage" id="homepage">
+      <div
+        class="homepage-bubble"
+        id="bubble1"
+        style="
+          width: 7em;
+          height: 7em;
+          background-color: #f5edff;
+          left: 7.5em;
+          top: 13em;
+        "
+      ></div>
+
+      <div
+        class="homepage-bubble"
+        id="bubble2"
+        style="
+          width: 4em;
+          height: 4em;
+          background-color: #f5edff;
+          left: 18.5em;
+          top: 15em;
+        "
+      ></div>
+
+      <div
+        class="homepage-bubble"
+        id="bubble3"
+        style="
+          width: 10em;
+          height: 10em;
+          background-color: #f7f7fb;
+          left: 34.5em;
+          top: 22em;
+        "
+      ></div>
+
+      <div
+        class="homepage-bubble"
+        id="bubble4"
+        style="
+          width: 12em;
+          height: 12em;
+          background-color: #f5edff;
+          left: 17.5em;
+          top: 31em;
+        "
+      ></div>
+
+      <div
+        class="homepage-bubble"
+        id="bubble5"
+        style="
+          width: 8em;
+          height: 8em;
+          background-color: #f7f7fb;
+          left: 29.5em;
+          top: 35em;
+        "
+      ></div>
+
+      <div
+        class="homepage-bubble"
+        id="bubble6"
+        style="
+          width: 5em;
+          height: 5em;
+          background-color: #f5edff;
+          left: 7.5em;
+          top: 43em;
+        "
+      ></div>
+
+      <svg
+        class="absolute"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        style="transform: translateY(51em)"
+      >
+        <defs>
+          <linearGradient id="gradwave" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="30%" style="stop-color: #c8a1ee; stop-opacity: 1" />
+            <stop offset="50%" style="stop-color: #a360e2; stop-opacity: 1" />
+            <stop offset="100%" style="stop-color: #c8a1ee; stop-opacity: 1" />
+          </linearGradient>
+        </defs>
+        <path
+          fill="url(#gradwave)"
+          fill-opacity="1"
+          d="M0,128L48,133.3C96,139,192,149,288,133.3C384,117,480,75,576,69.3C672,64,768,96,864,106.7C960,117,1056,107,1152,112C1248,117,1344,139,1392,149.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+        ></path>
+      </svg>
+
+      <svg
+        class="absolute"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        style="transform: translateY(49em)"
+      >
+        <path
+          fill="#fff"
+          fill-opacity="1"
+          d="M0,128L48,133.3C96,139,192,149,288,133.3C384,117,480,75,576,69.3C672,64,767,96,864,106.7C960,117,1056,107,1152,112C1248,117,1344,139,1392,149.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+        ></path>
+      </svg>
+    </section>
   </body>
 </html>

@@ -16,12 +16,12 @@
     <link rel="stylesheet" href="style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="scripts/dynamic-circles.js"></script>
     <script src="scripts/smooth-scroll.js"></script>
     <script src="scripts/scroll-trigger.js"></script>
     <script src="scripts/toggle-navbar.js"></script>
-    <script src="scripts/dynamic-circles.js"></script>
   </head>
-  <body style="background: teal">
+  <body>
     <div class="navbar">
       <div class="navbar-toggle center" onclick="toggleNavbar()">ᐳ</div>
       <div class="navbar-banner center">
@@ -48,110 +48,230 @@
     </div>
 
     <section class="homepage" id="homepage">
-      <div
-        class="homepage-bubble"
-        id="bubble1"
-        style="
-          width: 7em;
-          height: 7em;
-          background-color: #f5edff;
-          left: 7.5em;
-          top: 13em;
-        "
-      ></div>
+      <div>
+        <div
+          class="homepage-bubble"
+          id="bubble1"
+          style="
+            width: 7em;
+            height: 7em;
+            background-color: #f5edff;
+            left: 7.5em;
+            top: 13em;
+          "
+        ></div>
 
-      <div
-        class="homepage-bubble"
-        id="bubble2"
-        style="
-          width: 4em;
-          height: 4em;
-          background-color: #f5edff;
-          left: 18.5em;
-          top: 15em;
-        "
-      ></div>
+        <div
+          class="homepage-bubble"
+          id="bubble2"
+          style="
+            width: 4em;
+            height: 4em;
+            background-color: #f5edff;
+            left: 18.5em;
+            top: 15em;
+          "
+        ></div>
 
-      <div
-        class="homepage-bubble"
-        id="bubble3"
-        style="
-          width: 10em;
-          height: 10em;
-          background-color: #f7f7fb;
-          left: 34.5em;
-          top: 22em;
-        "
-      ></div>
+        <div
+          class="homepage-bubble"
+          id="bubble3"
+          style="
+            width: 10em;
+            height: 10em;
+            background-color: #f7f7fb;
+            left: 34.5em;
+            top: 22em;
+          "
+        ></div>
 
-      <div
-        class="homepage-bubble"
-        id="bubble4"
-        style="
-          width: 12em;
-          height: 12em;
-          background-color: #f5edff;
-          left: 17.5em;
-          top: 31em;
-        "
-      ></div>
+        <div
+          class="homepage-bubble"
+          id="bubble4"
+          style="
+            width: 12em;
+            height: 12em;
+            background-color: #f5edff;
+            left: 17.5em;
+            top: 31em;
+          "
+        ></div>
 
-      <div
-        class="homepage-bubble"
-        id="bubble5"
-        style="
-          width: 8em;
-          height: 8em;
-          background-color: #f7f7fb;
-          left: 29.5em;
-          top: 35em;
-        "
-      ></div>
+        <div
+          class="homepage-bubble"
+          id="bubble5"
+          style="
+            width: 8em;
+            height: 8em;
+            background-color: #f7f7fb;
+            left: 29.5em;
+            top: 35em;
+          "
+        ></div>
 
-      <div
-        class="homepage-bubble"
-        id="bubble6"
-        style="
-          width: 5em;
-          height: 5em;
-          background-color: #f5edff;
-          left: 7.5em;
-          top: 43em;
-        "
-      ></div>
+        <div
+          class="homepage-bubble"
+          id="bubble6"
+          style="
+            width: 5em;
+            height: 5em;
+            background-color: #f5edff;
+            left: 7.5em;
+            top: 43em;
+          "
+        ></div>
 
-      <svg
-        class="absolute"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1440 320"
-        style="transform: translateY(51em)"
-      >
-        <defs>
-          <linearGradient id="gradwave" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="30%" style="stop-color: #c8a1ee; stop-opacity: 1" />
-            <stop offset="50%" style="stop-color: #a360e2; stop-opacity: 1" />
-            <stop offset="100%" style="stop-color: #c8a1ee; stop-opacity: 1" />
-          </linearGradient>
-        </defs>
-        <path
-          fill="url(#gradwave)"
-          fill-opacity="1"
-          d="M0,128L48,133.3C96,139,192,149,288,133.3C384,117,480,75,576,69.3C672,64,768,96,864,106.7C960,117,1056,107,1152,112C1248,117,1344,139,1392,149.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
-        ></path>
-      </svg>
+        <svg
+          class="absolute"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0.028 0 30.072000000000003 27"
+          style="right: 0; height: 53em; z-index: 1"
+        >
+          <defs>
+            <pattern
+              id="img"
+              patternUnits="userSpaceOnUse"
+              width="42"
+              height="28"
+            >
+              <image
+                href="resources/images/homepage.png"
+                x="-3"
+                y="0"
+                width="42"
+                height="28"
+              />
+            </pattern>
+          </defs>
+          <path
+            fill="url(#img)"
+            fill-opacity="1"
+            d="M30.1,-0.027L30.1,23.93Q22.712,22.069,16.331,24.43C10.451,26.003,9.29,26.34,8.691,23.905Q7.492,16.452,4.078,11.993Q0.081,7.504,0.236,5.492Q0.545,2.065,3.264,0"
+          ></path>
+        </svg>
 
-      <svg
-        class="absolute"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1440 320"
-        style="transform: translateY(49em)"
-      >
-        <path
-          fill="#fff"
-          fill-opacity="1"
-          d="M0,128L48,133.3C96,139,192,149,288,133.3C384,117,480,75,576,69.3C672,64,767,96,864,106.7C960,117,1056,107,1152,112C1248,117,1344,139,1392,149.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
-        ></path>
-      </svg>
+        <svg
+          class="absolute"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0.028 0 30.072000000000003 27"
+          style="right: 0; height: 53em; z-index: 1"
+        >
+          <defs>
+            <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="20%" style="stop-color: #fcadba; stop-opacity: 1" />
+              <stop
+                offset="100%"
+                style="stop-color: #ffb287; stop-opacity: 1"
+              />
+            </linearGradient>
+          </defs>
+          <path
+            fill="url(#grad)"
+            fill-opacity="1"
+            d="M3.1,0Q0.424,2.085,0.028,5.494Q-0.174,7.466,3.772,12.169Q6.881,16.195,8.077,23.808C8.635,27.555,11.146,26.678,17.045,24.885Q23.742,22.971,30.1,25L30.1,23.93Q22.712,22.069,16.331,24.43C10.451,26.003,9.29,26.34,8.691,23.905Q7.492,16.452,4.078,11.993Q0.081,7.504,0.236,5.492Q0.545,2.065,3.264,0"
+          ></path>
+        </svg>
+
+        <svg
+          class="absolute shadow"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          style="transform: translateY(51em)"
+        >
+          <defs>
+            <linearGradient id="gradwave" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="30%" style="stop-color: #c8a1ee; stop-opacity: 1" />
+              <stop offset="50%" style="stop-color: #a360e2; stop-opacity: 1" />
+              <stop
+                offset="100%"
+                style="stop-color: #c8a1ee; stop-opacity: 1"
+              />
+            </linearGradient>
+          </defs>
+          <path
+            fill="url(#gradwave)"
+            fill-opacity="1"
+            d="M0,128L48,133.3C96,139,192,149,288,133.3C384,117,480,75,576,69.3C672,64,768,96,864,106.7C960,117,1056,107,1152,112C1248,117,1344,139,1392,149.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+          ></path>
+        </svg>
+
+        <svg
+          class="absolute"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          style="transform: translateY(49em)"
+        >
+          <path
+            fill="#fff"
+            fill-opacity="1"
+            d="M0,128L48,133.3C96,139,192,149,288,133.3C384,117,480,75,576,69.3C672,64,767,96,864,106.7C960,117,1056,107,1152,112C1248,117,1344,139,1392,149.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+          ></path>
+        </svg>
+      </div>
+
+      <div class="homepage-content">
+        <div class="social-sheet">
+          <ul>
+            <li>
+              <a href="https://www.github.com/jamesrichie">
+                <div class="primary-icon center">
+                  <img class="icon-top" src="resources/svg/github-base.svg" />
+                  <img
+                    class="icon-bottom"
+                    src="resources/svg/github-accent.svg"
+                  />
+                </div>
+              </a>
+              <a href="mailto:james.richie.sulaeman@gmail.com">
+                <div class="secondary-icon center">
+                  <img class="icon-top" src="resources/svg/mail-base.svg" />
+                  <img
+                    class="icon-bottom"
+                    src="resources/svg/mail-accent.svg"
+                  />
+                </div>
+              </a>
+              <a href="https://www.twitter.com/jamessrichiee">
+                <div class="secondary-icon center">
+                  <img class="icon-top" src="resources/svg/twitter-base.svg" />
+                  <img
+                    class="icon-bottom"
+                    src="resources/svg/twitter-accent.svg"
+                  />
+                </div>
+              </a>
+              <a href="https://www.linkedin.com/in/jamesrichiesulaeman">
+                <div class="secondary-icon center">
+                  <img class="icon-top" src="resources/svg/linkedin-base.svg" />
+                  <img
+                    class="icon-bottom"
+                    src="resources/svg/linkedin-accent.svg"
+                  />
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <h1>Welcome! My Name Is</h1>
+        <strong style="color: #391a47">James Richie</strong><br /><br />
+        <div class="animated-text">
+          <h2>
+            I am
+            <span class="animated-text-content"></span>
+            <span class="animated-text-cursor"></span>
+          </h2>
+          <script src="scripts/animated-text.js"></script>
+        </div>
+        <br /><br />
+        <a href="#about-me"
+          ><button class="primary-button">Learn More</button></a
+        >
+        <a href="#contact"
+          ><button class="secondary-button" style="margin-left: 1.5vw">
+            Contact Me
+          </button></a
+        >
+      </div>
     </section>
   </body>
 </html>

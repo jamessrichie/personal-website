@@ -315,7 +315,7 @@ p {
 }
 
 .shadow {
-  filter: drop-shadow(0 0 1em #29222d);
+  filter: drop-shadow(0 0 0.7em #29222d);
 }
 
 .social-sheet {

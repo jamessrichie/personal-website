@@ -58,10 +58,10 @@ function Delete() {
 
     // Start to display the next sentence after some time
     setTimeout(function () {
-      _INTERVAL_VAL = setInterval(Type, 100);
+      _INTERVAL_VAL = setInterval(Type, 50);
     }, 300);
   }
 }
 
 // Start the typing effect on load
-_INTERVAL_VAL = setInterval(Type, 100);
+_INTERVAL_VAL = setInterval(Type, 50);

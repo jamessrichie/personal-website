@@ -47,11 +47,11 @@
   display: inline-block;
   vertical-align: middle;
   margin-bottom: 0.14em;
+  color: #766df0;
 }
 
 .animated-text-cursor {
   animation: blink 0.75s step-end infinite;
-  background-color: #9595fc;
   display: inline-block;
   height: 1.3em;
   margin-bottom: 0.14em;
@@ -71,7 +71,6 @@ button {
   font-size: 1em;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 600;
-  text-decoration: none;
   cursor: pointer;
 }
 

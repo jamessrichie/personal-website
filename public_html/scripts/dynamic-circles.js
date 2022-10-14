@@ -1,13 +1,13 @@
 window.onload = function () {
   var bubble1 = document.getElementById("bubble1");
   document.body.addEventListener("mousemove", function (e) {
-    (bubble1.style.left = "calc(7.5em - " + 0.07 * (e.clientX - 800) + "px)"),
+    (bubble1.style.left = "calc(7.5em - " + 0.08 * (e.clientX - 800) + "px)"),
       (bubble1.style.top = "calc(13em - " + 0.05 * (e.clientY - 500) + "px)");
   });
 
   var bubble2 = document.getElementById("bubble2");
   document.body.addEventListener("mousemove", function (e) {
-    (bubble2.style.left = "calc(18.5em - " + 0.06 * (e.clientX - 800) + "px)"),
+    (bubble2.style.left = "calc(18.5em - " + 0.065 * (e.clientX - 800) + "px)"),
       (bubble2.style.top = "calc(15em - " + 0.04 * (e.clientY - 500) + "px)");
   });
 
@@ -19,7 +19,7 @@ window.onload = function () {
 
   var bubble4 = document.getElementById("bubble4");
   document.body.addEventListener("mousemove", function (e) {
-    (bubble4.style.left = "calc(17.5em - " + 0.06 * (e.clientX - 800) + "px)"),
+    (bubble4.style.left = "calc(17.5em - " + 0.065 * (e.clientX - 800) + "px)"),
       (bubble4.style.top = "calc(31em - " + 0.04 * (e.clientY - 500) + "px)");
   });
 
@@ -31,7 +31,7 @@ window.onload = function () {
 
   var bubble6 = document.getElementById("bubble6");
   document.body.addEventListener("mousemove", function (e) {
-    (bubble6.style.left = "calc(7.5em - " + 0.07 * (e.clientX - 800) + "px)"),
+    (bubble6.style.left = "calc(7.5em - " + 0.08 * (e.clientX - 800) + "px)"),
       (bubble6.style.top = "calc(43em - " + 0.05 * (e.clientY - 500) + "px)");
   });
 };

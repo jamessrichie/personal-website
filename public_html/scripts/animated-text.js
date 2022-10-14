@@ -1,9 +1,9 @@
 // List of sentences
 var _CONTENT = [
   "a Junior at the University of Washington",
+  "studying Computer Science",
+  "also studying Mathematics",
   "graduating in June 2024",
-  "a Computer Science major",
-  "a Mathematics major",
   "a software developer",
   "looking for a Summer 2023 internship",
 ];

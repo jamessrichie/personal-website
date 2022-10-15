@@ -51,8 +51,8 @@
 }
 
 .about-me-content {
-  margin: 16em 50% 0 12em;
-  padding-top: 18em;
+  margin: 16em 55% 0 12em;
+  padding-top: 16em;
   position: absolute;
 }
 
@@ -76,7 +76,7 @@
 .animated-text-content {
   display: inline-block;
   vertical-align: middle;
-  margin-bottom: 0.2em;
+  margin-bottom: 0.15em;
   color: #766df0;
 }
 

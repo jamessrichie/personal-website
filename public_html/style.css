@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;600;700&display=swap");
 
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -35,6 +35,35 @@
   --mouse-y: 0;
 }
 
+.about-me {
+  background: linear-gradient(150deg, #4e5067, #323346);
+  height: 115em;
+  position: relative;
+}
+
+.about-me-bubble {
+  border: none;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: drop-shadow(0 0 1.2em #29222d);
+  position: absolute;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.about-me-content {
+  margin: 16em 50% 0 12em;
+  padding-top: 18em;
+  position: absolute;
+}
+
+.about-me-ring {
+  background: none;
+  border: 1.5px solid #646479;
+  border-radius: 50%;
+  pointer-events: none;
+  position: absolute;
+}
+
 .absolute {
   position: absolute;
 }
@@ -57,6 +86,7 @@
   position: absolute;
   height: 1.3em;
   margin-bottom: 0.14em;
+  margin-left: 0.07em;
   vertical-align: middle;
   width: 3px;
 }
@@ -67,13 +97,16 @@ body {
 }
 
 button {
-  outline: none;
-  text-align: center;
-  text-decoration: none;
+  border-radius: 2em;
+  cursor: pointer;
+  filter: drop-shadow(0 0.2em 3px rgba(56, 56, 56, 0.1));
   font-size: 1em;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 600;
-  cursor: pointer;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  width: 9.5em;
 }
 
 .center {
@@ -82,25 +115,59 @@ button {
   align-items: center;
 }
 
+/* Heading 1*/
 h1 {
-  font-size: 2em;
-  font-weight: 600;
+  font-size: 4.8em;
   margin: 0;
 }
 
+/* Heading 2*/
 h2 {
-  font-size: 1.5em;
-  font-weight: 600;
+  font-size: 3em;
   margin: 0;
 }
 
+/* Subheading 1*/
 h3 {
-  font-size: 1em;
-  font-weight: 600;
+  font-size: 2em;
   margin: 0;
 }
 
-@media screen and (min-width: 320px) and (max-width: 488px) {
+/* Subheading 2*/
+h4 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+/* Body*/
+h5 {
+  font-size: 1em;
+  margin: 0;
+}
+
+html {
+  background: #f4f7fb;
+}
+
+@media screen and (max-width: 346px) {
+  html {
+    zoom: 0.18;
+  }
+}
+
+@media screen and (min-width: 347px) and (max-width: 370px) {
+  html {
+    zoom: 0.2;
+  }
+}
+
+@media screen and (min-width: 371px) and (max-width: 424px) {
+  html {
+    zoom: 0.22;
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 488px) {
   html {
     zoom: 0.25;
   }
@@ -191,31 +258,37 @@ h3 {
 }
 
 p {
-  font-size: 1em;
+  font-size: 1.3em;
   font-weight: 200;
   margin: 0;
 }
 
 .homepage {
+  background: #f4f7fb;
   height: 50em;
-  background: white;
   position: relative;
+  z-index: 1;
 }
 
 .homepage-bubble {
+  background: radial-gradient(
+    circle,
+    rgb(225, 192, 255) 0%,
+    rgba(245, 237, 255, 0) 70%
+  );
   border: none;
   border-radius: 50%;
-  height: 30px;
+  box-shadow: 0 10px 30px rgba(56, 56, 56, 0.2),
+    inset 2em 4em 30px 5px rgb(255, 255, 255);
   opacity: 0.5;
   pointer-events: none;
   position: absolute;
-  width: 30px;
   transform: translateX(-50%) translateY(-50%);
   transition: left 500ms ease-out, right 500ms ease-out;
 }
 
 .homepage-content {
-  padding: 12em 50% 0 10em;
+  margin: 14em 50% 0 12em;
   position: absolute;
 }
 
@@ -235,11 +308,11 @@ p {
   position: fixed;
   right: 1.5em;
   margin-top: 1em;
-  z-index: 2;
+  z-index: 10;
 }
 
 .navbar-banner {
-  background: white;
+  background: #f4f7fb;
   border-radius: 0 2.5em 2.5em 0;
   filter: drop-shadow(0 0.4em 5px rgba(56, 56, 56, 0.4));
   float: right;
@@ -274,17 +347,17 @@ p {
 
 @media (hover: hover) {
   .navbar-banner ul li a:hover {
-    transition: color 0.25s;
     color: #766df0 !important;
+    transition: color 0.25s;
   }
 }
 
 .navbar-content {
-  transition: 0.5s;
-  width: 100%;
+  margin-left: 38em;
   position: fixed;
   transform: translateX(-50%);
-  margin-left: 38em;
+  transition: 0.5s;
+  width: 100%;
 }
 
 .navbar-content-hide {
@@ -320,39 +393,40 @@ p {
 
 .primary-button {
   background: linear-gradient(90deg, #b1b1ff, #664ff5);
+  backdrop-filter: blur(2px);
   border: none;
-  border-radius: 2em;
   color: white;
   padding: calc(0.7em + 2px) 2px calc(0.7em + 2px) 2px;
   transition: color 0.35s;
-  width: 9.5em;
 }
 
 @media (hover: hover) {
   .primary-button:hover {
+    background: none;
     border: 2px solid #766df0;
     color: #766df0;
-    background: none;
     padding: 0.7em 0 0.7em 0;
   }
 }
 
 .primary-icon {
   background: linear-gradient(90deg, #9595fc, #664ff5);
+  backdrop-filter: blur(2px);
   border: none;
   border-radius: 50%;
-  height: 3.7em;
+  filter: drop-shadow(0 0.2em 3px rgba(56, 56, 56, 0.1));
+  height: 3.5em;
   transition: background 0.35s;
-  width: 3.7em;
+  width: 3.5em;
   position: absolute;
 }
 
 @media (hover: hover) {
   .primary-icon:hover {
-    border: 1.5px solid #766df0;
     background: none;
-    height: calc(3.7em - 3px);
-    width: calc(3.7em - 3px);
+    border: 1.5px solid #766df0;
+    height: calc(3.5em - 3px);
+    width: calc(3.5em - 3px);
   }
 
   .primary-icon:hover > .icon-top {
@@ -364,29 +438,53 @@ p {
   }
 }
 
-.secondary-button {
+.profile-picture {
+  border-radius: 50%;
+  height: 90%;
+  width: 90%;
+}
+
+.secondary-button-dark {
   background: none;
-  border: 2px solid lightgray;
-  border-radius: 2em;
-  color: gray;
+  backdrop-filter: blur(2px);
+  border: 1.5px solid lightgray;
+  color: white;
   padding: 0.7em 0 0.7em 0;
   transition: all 0.35s;
-  width: 9.5em;
 }
 
 @media (hover: hover) {
-  .secondary-button:hover {
+  .secondary-button-dark:hover {
+    border: 1.5px solid #766df0;
+    color: #766df0;
+  }
+}
+
+.secondary-button-light {
+  background: none;
+  backdrop-filter: blur(2px);
+  border: 2px solid lightgray;
+  color: gray;
+  padding: 0.7em 0 0.7em 0;
+  transition: all 0.35s;
+}
+
+@media (hover: hover) {
+  .secondary-button-light:hover {
     border: 2px solid #766df0;
     color: #766df0;
   }
 }
 
 .secondary-icon {
+  background: none;
+  backdrop-filter: blur(2px);
   border: 1.5px solid lightgray;
   border-radius: 50%;
-  height: calc(3.7em - 3px);
+  filter: drop-shadow(0 0.2em 3px rgba(56, 56, 56, 0.1));
+  height: calc(3.5em - 3px);
   transition: background 0.35s;
-  width: calc(3.7em - 3px);
+  width: calc(3.5em - 3px);
   position: absolute;
 }
 
@@ -424,7 +522,7 @@ p {
 }
 
 .social-sheet ul li a {
-  padding: 2.2em;
+  padding: 2.15em;
   display: inline-block;
 }
 
@@ -435,9 +533,16 @@ p {
   width: 2em;
 }
 
-strong {
-  font-size: 4.8em;
+.bold {
   font-weight: 700;
+}
+
+.semi-bold {
+  font-weight: 600;
+}
+
+.regular {
+  font-weight: 200;
 }
 
 .svg-shape {
@@ -448,9 +553,9 @@ strong {
 @keyframes blink {
   from,
   to {
-    background-color: #9595fc;
+    background: #9595fc;
   }
   50% {
-    background-color: transparent;
+    background: transparent;
   }
 }

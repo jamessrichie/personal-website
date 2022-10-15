@@ -285,11 +285,13 @@ p {
   position: absolute;
   transform: translateX(-50%) translateY(-50%);
   transition: left 500ms ease-out, right 500ms ease-out;
+  z-index: 1;
 }
 
 .homepage-content {
   margin: 14em 50% 0 12em;
   position: absolute;
+  z-index: 2;
 }
 
 .icon-top {

@@ -45,8 +45,8 @@
 .about-me-bubble {
   border: none;
   border-radius: 50%;
-  pointer-events: none;
   filter: drop-shadow(0 0 1.2em #29222d);
+  pointer-events: none;
   position: absolute;
   transform: translateX(-50%) translateY(-50%);
 }
@@ -69,37 +69,37 @@
 }
 
 .animated-text {
-  text-align: left;
   height: 2em;
+  text-align: left;
 }
 
 .animated-text-content {
-  display: inline-block;
-  vertical-align: middle;
-  margin-bottom: 0.15em;
   color: #766df0;
+  display: inline-block;
+  margin-bottom: 0.15em;
+  vertical-align: middle;
 }
 
 .animated-text-cursor {
   animation: blink 0.75s step-end infinite;
   display: inline-block;
-  position: absolute;
   height: 1.3em;
   margin-bottom: 0.14em;
   margin-left: 0.07em;
+  position: absolute;
   vertical-align: middle;
   width: 3px;
 }
 
 body {
-  margin: 0;
   font-family: "Nunito Sans", sans-serif;
+  margin: 0;
 }
 
 .browser {
-  width: 37em;
   height: 22.5em;
   transform: translate(-1.5em, 1.5em);
+  width: 37em;
 }
 
 .browser img {
@@ -108,11 +108,11 @@ body {
 }
 
 .browser-content {
+  background-size: cover;
+  height: 21.27em;
   position: absolute;
   transform: translate(2.55em, -0.95em);
-  background-size: cover;
   width: 37.45em;
-  height: 21.27em;
   z-index: 1;
 }
 
@@ -129,10 +129,76 @@ button {
   width: 9.5em;
 }
 
+.carousel {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 2em;
+  height: 50em;
+  overflow-y: auto;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+  scroll-behavior: auto;
+  scroll-snap-type: x mandatory;
+  transform: translateX(-12em);
+  width: 100vw;
+}
+
+.notes-link {
+  color: #bbfcff;
+  text-decoration: none;
+}
+
+@media (hover: hover) {
+  .notes-link:hover {
+    text-decoration: underline;
+  }
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-card {
+  background: linear-gradient(150deg, #6393f6, #b4cffb);
+  border-radius: 3em;
+  filter: drop-shadow(0 1em 1em rgba(41, 34, 45, 0.2));
+  height: 40em;
+  scroll-snap-align: start;
+  width: 28em;
+}
+
+.carousel-card:nth-child(1) {
+  background: none;
+  width: 10em;
+}
+
+.carousel-card:nth-last-child(1) {
+  margin-right: 12em;
+}
+
+.carousel-card-content {
+  padding: 0 3em 0 3em;
+  color: white;
+}
+
+hr {
+  width: 100%;
+  border-top: 1px solid white;
+}
+
 .center {
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
+}
+
+.education {
+  background: linear-gradient(90deg, #746dec, #749aed);
+  height: 63em;
+}
+
+.education-content {
+  padding: 5em 12em 0 12em;
 }
 
 /* Heading 1 */
@@ -155,7 +221,13 @@ h3 {
 
 /* Subheading 2 */
 h4 {
-  font-size: 1.5em;
+  font-size: 1.8em;
+  margin: 0;
+}
+
+/* Subheading 2 */
+h5 {
+  font-size: 1.8em;
   margin: 0;
 }
 
@@ -415,38 +487,39 @@ p {
 }
 
 .portfolio {
-  scroll-margin-top: 4em;
+  height: 83em;
   margin-top: -27em;
   position: relative;
+  scroll-margin-top: 4em;
 }
 
 .portfolio-content {
   position: absolute;
-  width: 100%;
   text-align: center;
+  width: 100%;
 }
 
 .portfolio-description {
-  text-align: left;
-  max-width: 33%;
   margin-right: 1.5em;
+  max-width: 33%;
   padding-right: 4em;
+  text-align: left;
 }
 
 .portfolio-tag {
   border: 1.5px solid black;
   border-radius: 0.8em;
   color: black;
+  font-size: 1em;
   padding: 0.4em 0.6em 0.4em 0.6em;
   width: fit-content;
-  font-size: 1em;
 }
 
 .portfolio-listing {
+  align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
   margin: 8em 0 8em 0;
 }
 

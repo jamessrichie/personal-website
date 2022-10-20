@@ -133,25 +133,13 @@ button {
   display: grid;
   grid-auto-flow: column;
   gap: 2em;
-  height: 50em;
+  height: 42em;
   overflow-y: auto;
   overscroll-behavior-x: contain;
   scrollbar-width: none;
   scroll-behavior: auto;
   scroll-snap-type: x mandatory;
-  transform: translateX(-12em);
-  width: 100vw;
-}
-
-.notes-link {
-  color: #bbfcff;
-  text-decoration: none;
-}
-
-@media (hover: hover) {
-  .notes-link:hover {
-    text-decoration: underline;
-  }
+  width: 100%;
 }
 
 .carousel::-webkit-scrollbar {
@@ -162,7 +150,7 @@ button {
   background: linear-gradient(150deg, #6393f6, #b4cffb);
   border-radius: 3em;
   filter: drop-shadow(0 1em 1em rgba(41, 34, 45, 0.2));
-  height: 40em;
+  height: 37em;
   scroll-snap-align: start;
   width: 28em;
 }
@@ -173,17 +161,13 @@ button {
 }
 
 .carousel-card:nth-last-child(1) {
-  margin-right: 12em;
+  background: none;
+  width: 10em;
 }
 
 .carousel-card-content {
   padding: 0 3em 0 3em;
   color: white;
-}
-
-hr {
-  width: 100%;
-  border-top: 1px solid white;
 }
 
 .center {
@@ -225,16 +209,22 @@ h4 {
   margin: 0;
 }
 
-/* Subheading 2 */
+/* Subheading 3 */
 h5 {
-  font-size: 1.8em;
+  font-size: 1.5em;
   margin: 0;
 }
 
 /* Body */
-h5 {
+h6 {
   font-size: 1.3em;
   margin: 0;
+}
+
+hr {
+  width: 100%;
+  border-top: 1px solid white;
+  background: white;
 }
 
 html {
@@ -348,12 +338,6 @@ html {
   html {
     zoom: 1;
   }
-}
-
-p {
-  font-size: 1.3em;
-  font-weight: 200;
-  margin: 0;
 }
 
 .homepage {
@@ -484,6 +468,23 @@ p {
 .navbar-toggle-hide {
   transform: translateX(-2em) rotate(180deg);
   filter: drop-shadow(0 -0.4em 5px rgba(56, 56, 56, 0.4));
+}
+
+.notes-link {
+  color: #bbfcff;
+  text-decoration: none;
+}
+
+@media (hover: hover) {
+  .notes-link:hover {
+    text-decoration: underline;
+  }
+}
+
+p {
+  font-size: 1.3em;
+  font-weight: 200;
+  margin: 0;
 }
 
 .portfolio {

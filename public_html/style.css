@@ -2,18 +2,18 @@
 
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: white;
+  color: #939fb3;
   opacity: 1; /* Firefox */
 }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: white;
+  color: #939fb3;
 }
 
 ::-ms-input-placeholder {
   /* Microsoft Edge */
-  color: white;
+  color: #939fb3;
 }
 
 ::-webkit-scrollbar {
@@ -92,7 +92,6 @@
 }
 
 body {
-  font-family: "Nunito Sans", sans-serif;
   margin: 0;
 }
 
@@ -120,7 +119,7 @@ button {
   border-radius: 2em;
   cursor: pointer;
   filter: drop-shadow(0 0.2em 3px rgba(56, 56, 56, 0.1));
-  font-size: 1em;
+  font-size: 1.1em;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 600;
   outline: none;
@@ -185,6 +184,12 @@ button {
   padding: 5em 12em 0 12em;
 }
 
+footer {
+  background: #37384d;
+  text-align: center;
+  padding: 0 12em 0 12em;
+}
+
 /* Heading 1 */
 h1 {
   font-size: 4.8em;
@@ -215,20 +220,21 @@ h5 {
   margin: 0;
 }
 
-/* Body */
+/* Tiny */
 h6 {
-  font-size: 1.3em;
+  font-size: 1.1em;
   margin: 0;
 }
 
 hr {
   width: 100%;
-  border-top: 1px solid white;
+  border-top: 0px solid white;
   background: white;
 }
 
 html {
   background: #f4f7fb;
+  font-family: "Nunito Sans", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -377,6 +383,43 @@ html {
 
 .icon-bottom {
   opacity: 0;
+}
+
+input {
+  background: white;
+  border: none;
+  border-radius: 1em 0 0 1em;
+  color: #939fb3;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.1em;
+  outline: none;
+  padding: 1.1em 0 1.1em 1.5em;
+  width: 35em;
+}
+
+.input-button {
+  background: linear-gradient(90deg, #9595fc, #664ff5);
+  border: none;
+  border-radius: 0 1em 1em 0;
+  color: white;
+  filter: saturate(1);
+  float: right;
+  font-size: 1.1em;
+  padding: 1.1em 0 1.1em 0;
+  transition: filter 0.35s;
+  width: 10em;
+}
+
+@media (hover: hover) {
+  .input-button:hover {
+    filter: saturate(5);
+  }
+}
+
+.input-container {
+  display: inline-block;
+  text-align: center;
+  margin: 2em 0 7em 0;
 }
 
 .navbar {

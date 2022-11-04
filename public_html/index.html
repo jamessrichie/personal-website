@@ -144,7 +144,7 @@
           class="absolute shadow"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1440 320"
-          style="transform: translateY(51em)"
+          style="transform: translateY(51em); z-index: 0"
         >
           <defs>
             <linearGradient id="gradwave" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -258,7 +258,7 @@
           class="absolute shadow"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 3000 300"
-          style="transform: translateY(90em)"
+          style="transform: translateY(90em); z-index: 0"
         >
           <path
             fill="url(#gradwave)"
@@ -269,7 +269,7 @@
           class="absolute"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 3000 700"
-          style="transform: translateY(92em)"
+          style="transform: translateY(92em); z-index: 1"
         >
           <path
             fill="#f4f7fb"
@@ -444,12 +444,6 @@
             My Portfolio
           </button></a
         >
-
-        <a href="#education"
-          ><button class="secondary-button-dark" style="margin-left: 1.5vw">
-            My Education
-          </button></a
-        >
       </div>
     </section>
 
@@ -460,9 +454,9 @@
         </h2>
         <div class="portfolio-listing">
           <div class="portfolio-description">
-            <div class="portfolio-tag semi-bold">Java, HTML/CSS, React.js</div>
+            <div class="portfolio-tag semi-bold">HTML/CSS, Javascript</div>
             <br />
-            <h4 class="bold">Lorem Ipsum</h4>
+            <h4 class="bold">My Personal Website</h4>
             <p class="thick" style="color: gray; margin: 0.5em 0 1em 0">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Aspernatur beatae dolores eum eveniet explicabo, facere ipsum
@@ -484,7 +478,7 @@
           <div class="portfolio-description">
             <div class="portfolio-tag semi-bold">Java, HTML/CSS, React.js</div>
             <br />
-            <h4 class="bold">Dolor Sit Amet</h4>
+            <h4 class="bold">University Campus Map</h4>
             <p class="thick" style="color: gray; margin: 0.5em 0 1em 0">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Aspernatur beatae dolores eum eveniet explicabo, facere ipsum
@@ -882,7 +876,12 @@
         />
         <button class="input-button" onclick="sendMail()">Submit</button>
       </div>
-      <hr style="background: #9b96a6; border-color: #9b96a6" />
+      <hr
+        style="
+          background: rgba(195, 196, 202, 0.45);
+          border: 0.5px solid rgba(195, 196, 202, 0.45);
+        "
+      />
       <h6 class="regular" style="color: #c3c4ca; padding: 2em 0 2em 0">
         All Rights Reserved © 2022 &nbsp|&nbsp Made by
         <span class="semi-bold">James Richie Sulaeman</span>

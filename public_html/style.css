@@ -151,7 +151,7 @@ button {
   filter: drop-shadow(0 1em 1em rgba(41, 34, 45, 0.2));
   height: 37em;
   scroll-snap-align: start;
-  width: 28em;
+  width: 26em;
 }
 
 .carousel-card:nth-child(1) {
@@ -165,7 +165,7 @@ button {
 }
 
 .carousel-card-content {
-  padding: 0 3em 0 3em;
+  padding: 0 2.5em 0 2.5em;
   color: white;
 }
 
@@ -535,6 +535,7 @@ p {
   margin-top: -27em;
   position: relative;
   scroll-margin-top: 4em;
+  z-index: 3;
 }
 
 .portfolio-content {

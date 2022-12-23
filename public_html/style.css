@@ -40,6 +40,7 @@
   height: 115em;
   position: relative;
   scroll-margin-top: -14em;
+  z-index: -11;
 }
 
 .about-me-bubble {
@@ -154,12 +155,6 @@ button {
   transition: 0.25s ease-in-out;
   width: 26em;
   transform: scale(0.9);
-}
-
-@media (hover: hover) {
-  .carousel-card:hover {
-    transform: scale(0.95);
-  }
 }
 
 .carousel-card:nth-child(1) {
@@ -431,13 +426,8 @@ input {
 }
 
 .navbar {
-  display: inline-flex;
-  flex-direction: row;
-  flex-shrink: 0;
-  height: 5em;
+  padding-top: 1em;
   position: fixed;
-  right: 1.5em;
-  margin-top: 1em;
   z-index: 10;
 }
 
@@ -445,54 +435,56 @@ input {
   background: #f4f7fb;
   border-radius: 0 2.5em 2.5em 0;
   filter: drop-shadow(0 0.4em 5px rgba(56, 56, 56, 0.4));
-  float: right;
-  transition: width 0.5s, opacity 1s;
+  height: 5em;
+  position: fixed;
+  right: 1.5em;
+  transition: 0.5s;
   width: 40em;
 }
 
 .navbar-banner-hide {
-  width: 0 !important;
   opacity: 0;
-}
-
-.navbar-banner ul {
-  list-style-type: none;
-  overflow: hidden;
-}
-
-.navbar ul li {
-  float: right;
-}
-
-.navbar-banner ul li a {
-  color: #5a5b74;
-  font-size: 1em;
-  font-weight: 600;
-  padding: 0 0.9em 0 0.9em;
-  text-align: center;
-  text-decoration: none;
-  transition-duration: 0.25s;
-  width: auto;
-}
-
-@media (hover: hover) {
-  .navbar-banner ul li a:hover {
-    color: #766df0 !important;
-    transition: color 0.25s;
-  }
+  width: 0;
 }
 
 .navbar-content {
-  margin-left: 38em;
   position: fixed;
-  transform: translateX(-50%);
+  right: 2.75em;
   transition: 0.5s;
   width: 100%;
 }
 
 .navbar-content-hide {
-  transform: scale(0);
-  margin-left: -5em;
+  transform: translate(53em, -0.1em) scale(0);
+}
+
+.navbar-content ul {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+}
+
+.navbar-content ul li {
+  float: right;
+}
+
+.navbar-content ul li a {
+  color: #5a5b74;
+  display: block;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 1.9em 0.9em 1.9em 0.9em;
+  text-align: center;
+  text-decoration: none;
+  transition: color 0.25s;
+  width: auto;
+}
+
+@media (hover: hover) {
+  .navbar-content ul li a:hover:not(.active) {
+    color: #766df0 !important;
+    transition: color 0.25s;
+  }
 }
 
 .navbar-toggle {
@@ -500,25 +492,26 @@ input {
   border-radius: 50%;
   color: #5a5b74;
   cursor: pointer;
-  font-weight: 600;
   filter: drop-shadow(0 0.4em 5px rgba(56, 56, 56, 0.4));
+  font-weight: 600;
   height: 5em;
-  margin-right: -2.5em;
-  transition: 0.5s;
+  position: fixed;
+  right: 1.5em;
+  transform: translateX(-37.5em);
+  transition: 0.5s, color 0.25s;
   width: 5em;
   z-index: 1;
 }
 
 @media (hover: hover) {
   .navbar-toggle:hover {
-    transition: color 0.25s;
     color: #766df0 !important;
   }
 }
 
 .navbar-toggle-hide {
-  transform: translateX(-2em) rotate(180deg);
   filter: drop-shadow(0 -0.4em 5px rgba(56, 56, 56, 0.4));
+  transform: translateX(0) rotate(180deg);
 }
 
 .notes-link {

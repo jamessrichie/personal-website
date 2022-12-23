@@ -131,10 +131,10 @@ button {
 .carousel {
   display: grid;
   grid-auto-flow: column;
-  gap: 2em;
   height: 42em;
   overflow-y: auto;
   overscroll-behavior-x: contain;
+  padding: 2em 0 2em 0;
   scrollbar-width: none;
   scroll-behavior: auto;
   scroll-snap-type: x mandatory;
@@ -151,17 +151,25 @@ button {
   filter: drop-shadow(0 1em 1em rgba(41, 34, 45, 0.2));
   height: 37em;
   scroll-snap-align: start;
+  transition: 0.25s ease-in-out;
   width: 26em;
+  transform: scale(0.9);
+}
+
+@media (hover: hover) {
+  .carousel-card:hover {
+    transform: scale(0.95);
+  }
 }
 
 .carousel-card:nth-child(1) {
   background: none;
-  width: 10em;
+  width: 11em;
 }
 
 .carousel-card:nth-last-child(1) {
   background: none;
-  width: 10em;
+  width: 11em;
 }
 
 .carousel-card-content {

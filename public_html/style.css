@@ -175,6 +175,12 @@ button {
   justify-content: center;
 }
 
+.contact {
+  background: #37384d;
+  text-align: center;
+  padding: 0 12em 0 12em;
+}
+
 .education {
   background: linear-gradient(90deg, #746dec, #749aed);
   height: 63em;
@@ -182,12 +188,6 @@ button {
 
 .education-content {
   padding: 5em 12em 0 12em;
-}
-
-footer {
-  background: #37384d;
-  text-align: center;
-  padding: 0 12em 0 12em;
 }
 
 /* Heading 1 */

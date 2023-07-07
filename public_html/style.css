@@ -40,7 +40,7 @@
   height: 115em;
   position: relative;
   scroll-margin-top: -14em;
-  z-index: -11;
+  z-index: 0;
 }
 
 .about-me-bubble {

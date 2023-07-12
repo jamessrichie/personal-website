@@ -135,7 +135,7 @@ button {
   height: 42em;
   overflow-y: auto;
   overscroll-behavior-x: contain;
-  padding: 2em 0 2em 0;
+  padding: 2.5em 0 2em 0;
   scrollbar-width: none;
   scroll-behavior: auto;
   scroll-snap-type: x mandatory;
@@ -147,23 +147,27 @@ button {
 }
 
 .carousel-card {
-  background: linear-gradient(150deg, #6393f6, #b4cffb);
   border-radius: 3em;
-  filter: drop-shadow(0 1em 1em rgba(41, 34, 45, 0.2));
-  height: 37em;
+  box-shadow: 0.6em 0.6em 2em rgba(41, 34, 45, 0.2),
+    -0.6em -0.6em 1.5em rgba(255, 255, 255, 0.2);
+  height: 38em;
   scroll-snap-align: start;
   transition: 0.25s ease-in-out;
-  width: 26em;
+  width: 30em;
   transform: scale(0.9);
 }
 
 .carousel-card:nth-child(1) {
+  backdrop-filter: none;
   background: none;
+  box-shadow: none;
   width: 11em;
 }
 
 .carousel-card:nth-last-child(1) {
+  backdrop-filter: none;
   background: none;
+  box-shadow: none;
   width: 11em;
 }
 
@@ -186,7 +190,6 @@ button {
 
 .education {
   background: linear-gradient(90deg, #746dec, #749aed);
-  height: 63em;
 }
 
 .education-content {
@@ -244,6 +247,7 @@ html {
 @media (max-width: 346px) {
   html {
     zoom: 0.18;
+    display: none;
   }
 }
 
@@ -422,7 +426,7 @@ input {
 .input-container {
   display: inline-block;
   text-align: center;
-  margin: 2em 0 7em 0;
+  margin: 2em 0 5em 0;
 }
 
 .navbar {
@@ -526,13 +530,12 @@ input {
 }
 
 p {
-  font-size: 1.3em;
+  font-size: 1.4em;
   font-weight: 200;
   margin: 0;
 }
 
 .portfolio {
-  height: 83em;
   margin-top: -27em;
   position: relative;
   scroll-margin-top: 4em;
@@ -540,7 +543,6 @@ p {
 }
 
 .portfolio-content {
-  position: absolute;
   text-align: center;
   width: 100%;
 }

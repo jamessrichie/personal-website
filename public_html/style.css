@@ -247,7 +247,6 @@ html {
 @media (max-width: 346px) {
   html {
     zoom: 0.18;
-    display: none;
   }
 }
 
